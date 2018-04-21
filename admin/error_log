@@ -1,0 +1,7 @@
+[16-Apr-2018 14:59:59 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/tingtorn/public_html/click1cake/system/engine/controller.php on line 29
+[16-Apr-2018 15:00:01 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/tingtorn/public_html/click1cake/system/engine/controller.php on line 29
+[16-Apr-2018 15:00:05 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/tingtorn/public_html/click1cake/system/engine/controller.php on line 29
+[16-Apr-2018 15:00:39 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/tingtorn/public_html/click1cake/system/engine/controller.php on line 29
+[16-Apr-2018 15:00:41 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/tingtorn/public_html/click1cake/system/engine/controller.php on line 29
+[16-Apr-2018 15:05:10 UTC] PHP Parse error:  syntax error, unexpected '--' (T_DEC) in /home/tingtorn/public_html/click1cake/system/engine/controller.php on line 29
+[16-Apr-2018 15:05:26 UTC] PHP Parse error:  syntax error, unexpected 'protected' (T_PROTECTED), expecting end of file in /home/tingtorn/public_html/click1cake/system/engine/controller.php on line 31

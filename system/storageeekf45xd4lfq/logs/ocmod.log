@@ -1,0 +1,1242 @@
+2018-04-17 14:52:55 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Automatic Generate an Order Invoice Number
+
+FILE: catalog/model/checkout/order.php
+CODE: if ($order_info) {
+LINE: 544
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 699
+----------------------------------------------------------------
+MOD: Invoice Barcode By Kamran
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: #{{ order.order_id }}
+LINE: 19
+CODE: </html>
+LINE: 141
+----------------------------------------------------------------
+MOD: Truesupplier-account order product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 75
+CODE: <td>{{ product.model }}</td>
+LINE: 92
+CODE: <td class="text-right" colspan="4">
+LINE: 109
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+2018-04-17 15:00:37 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Automatic Generate an Order Invoice Number
+
+FILE: catalog/model/checkout/order.php
+CODE: if ($order_info) {
+LINE: 278
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 355
+----------------------------------------------------------------
+MOD: Invoice Barcode By Kamran
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: #{{ order.order_id }}
+LINE: 19
+CODE: </html>
+LINE: 141
+----------------------------------------------------------------
+MOD: Truesupplier-account order product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 75
+CODE: <td>{{ product.model }}</td>
+LINE: 92
+CODE: <td class="text-right" colspan="4">
+LINE: 109
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+2018-04-19 3:31:04 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Invoice Barcode By Kamran
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: #{{ order.order_id }}
+LINE: 19
+CODE: </html>
+LINE: 141
+----------------------------------------------------------------
+MOD: Truesupplier-account order product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 75
+CODE: <td>{{ product.model }}</td>
+LINE: 92
+CODE: <td class="text-right" colspan="4">
+LINE: 109
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+2018-04-19 3:31:06 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Invoice Barcode By Kamran
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: #{{ order.order_id }}
+LINE: 19
+CODE: </html>
+LINE: 141
+----------------------------------------------------------------
+MOD: Truesupplier-account order product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 75
+CODE: <td>{{ product.model }}</td>
+LINE: 92
+CODE: <td class="text-right" colspan="4">
+LINE: 109
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+2018-04-19 3:32:05 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Invoice Barcode By Kamran
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: #{{ order.order_id }}
+LINE: 19
+CODE: </html>
+LINE: 141
+----------------------------------------------------------------
+2018-04-19 3:32:32 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Invoice Barcode By Kamran
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: #{{ order.order_id }}
+LINE: 19
+CODE: </html>
+LINE: 141
+----------------------------------------------------------------
+2018-04-19 3:33:17 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Invoice Barcode By Kamran
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: #{{ order.order_id }}
+LINE: 19
+CODE: </html>
+LINE: 141
+----------------------------------------------------------------
+MOD: Invoice can show product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 75
+CODE: <td>{{ product.model }}</td>
+LINE: 92
+CODE: <td class="text-right" colspan="4">
+LINE: 109
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+2018-04-19 3:57:01 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Generate an Order Invoice Number Automaticlly
+
+FILE: catalog/model/checkout/order.php
+CODE: if ($order_info) {
+LINE: 278
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 355
+----------------------------------------------------------------
+MOD: Invoice Barcode By Kamran
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: #{{ order.order_id }}
+LINE: 19
+CODE: </html>
+LINE: 141
+----------------------------------------------------------------
+MOD: Invoice can show product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 75
+CODE: <td>{{ product.model }}</td>
+LINE: 92
+CODE: <td class="text-right" colspan="4">
+LINE: 109
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+2018-04-19 4:06:05 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Generate an Order Invoice Number Automaticlly
+
+FILE: catalog/model/checkout/order.php
+CODE: if ($order_info) {
+LINE: 278
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 355
+----------------------------------------------------------------
+MOD: Invoice can show product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 72
+CODE: <td>{{ product.model }}</td>
+LINE: 89
+CODE: <td class="text-right" colspan="4">
+LINE: 106
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+2018-04-19 4:06:06 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Generate an Order Invoice Number Automaticlly
+
+FILE: catalog/model/checkout/order.php
+CODE: if ($order_info) {
+LINE: 278
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 355
+----------------------------------------------------------------
+MOD: Invoice can show product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 72
+CODE: <td>{{ product.model }}</td>
+LINE: 89
+CODE: <td class="text-right" colspan="4">
+LINE: 106
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+2018-04-19 4:06:07 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Generate an Order Invoice Number Automaticlly
+
+FILE: catalog/model/checkout/order.php
+CODE: if ($order_info) {
+LINE: 278
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 355
+----------------------------------------------------------------
+MOD: Invoice can show product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 72
+CODE: <td>{{ product.model }}</td>
+LINE: 89
+CODE: <td class="text-right" colspan="4">
+LINE: 106
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+2018-04-19 4:06:25 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 69
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 77
+LINE: 151
+LINE: 168
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 59
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 67
+LINE: 73
+
+FILE: system/library/template/template.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/twig.php
+CODE: $loader = new \Twig_Loader_Filesystem(DIR_TEMPLATE);
+LINE: 19
+----------------------------------------------------------------
+MOD: Generate an Order Invoice Number Automaticlly
+
+FILE: catalog/model/checkout/order.php
+CODE: if ($order_info) {
+LINE: 278
+CODE: $this->db->query("UPDATE `" . DB_PREFIX . "order` SET order_status_id = '" . (int)$order_status_id . "', date_modified = NOW() WHERE order_id = '" . (int)$order_id . "'");
+LINE: 355
+----------------------------------------------------------------
+MOD: Invoice can show product image
+
+FILE: catalog/controller/account/order.php
+CODE: $data['products'][] = array(
+LINE: 284
+CODE: 'reorder'  => $reorder,
+LINE: 295
+
+FILE: catalog/language/en-gb/account/order.php
+CODE: $_['column_name']           = 'Product Name';
+LINE: 28
+
+FILE: catalog/view/theme/default/template/account/order_info.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 67
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 87
+CODE: <td colspan="3"></td>
+LINE: 111
+
+FILE: catalog/controller/checkout/confirm.php
+CODE: $data['products'][] = array(
+LINE: 383
+CODE: 'recurring'  => $recurring,
+LINE: 392
+CODE: <td colspan="4" class="text-right">
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/view/theme/default/template/checkout/confirm.twig
+CODE: <td class="text-left">{{ column_name }}</td>
+LINE: 8
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 26
+CODE: <td colspan="4" class="text-right"><strong>{{ total.title }}:</strong></td>
+LINE: 47
+
+FILE: catalog/language/en-gb/checkout/checkout.php
+CODE: $_['column_name']                    = 'Product Name';
+LINE: 46
+
+FILE: admin/controller/sale/order.php
+CODE: $data['products'][] = array(
+LINE: 947
+CODE: 'option'   		   => $option_data,
+LINE: 955
+
+FILE: admin/language/en-gb/sale/order.php
+CODE: $_['column_product']             = 'Product';
+LINE: 73
+
+FILE: admin/view/template/sale/order_info.twig
+CODE: <td class="text-left">{{ column_product }}</td>
+LINE: 149
+CODE: <td colspan="4" class="text-right">
+LINE: 182
+CODE: <td class="text-left">{{ product.model }}</td>
+LINE: 168
+CODE: $product_data[] = array(
+LINE: 1637
+LINE: 1839
+CODE: 'option'   => $option_data,
+LINE: 1643
+LINE: 1848
+
+FILE: admin/view/template/sale/order_invoice.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 72
+CODE: <td>{{ product.model }}</td>
+LINE: 89
+CODE: <td class="text-right" colspan="4">
+LINE: 106
+
+FILE: admin/view/template/sale/order_shipping.twig
+CODE: <td><b>{{ column_model }}</b></td>
+LINE: 68
+CODE: <td>{{ product.model }}</td>
+LINE: 103
+----------------------------------------------------------------
+MOD: Show Invoice Barcode in Admin Invoice
+CODE: #{{ order.order_id }}
+LINE: 19
+CODE: </html>
+LINE: 149
+----------------------------------------------------------------

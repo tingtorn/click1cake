@@ -1,0 +1,13 @@
+---------- Date: 2018-04-16 17:31:45 ~ IP : 118.141.76.217 ----------
+REQUEST URI : /click1cake/
+MOD DETAILS:
+   modFile   : /home/tingtorn/public_html/click1cake/vqmod/xml/vqmod_homepage.xml
+   id        : Replace the css property in heading title in Home page
+   version   : 1.0
+   vqmver    : 2.X
+   author    : Tuts+
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/default/template/common/home.tpl] (SKIPPED)
+
+----------------------------------------------------------------------
+
+

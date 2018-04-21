@@ -1,0 +1,27 @@
+2018-04-15 6:51:37 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/library/template/Twig/Environment.php(403) : eval()'d code on line 171
+2018-04-16 17:04:34 - PHP Warning:  fopen(/home/tingtorn/public_html/click1cake/system/storageeekf45xd4lfq/modification/admin/view/template/sale/order_shipping.twig): failed to open stream: No such file or directory in /home/tingtorn/public_html/click1cake/admin/controller/marketplace/modification.php on line 413
+2018-04-16 17:04:34 - PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tingtorn/public_html/click1cake/admin/controller/marketplace/modification.php on line 415
+2018-04-16 17:04:34 - PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tingtorn/public_html/click1cake/admin/controller/marketplace/modification.php on line 417
+2018-04-16 18:00:14 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 416
+2018-04-16 18:06:16 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:06:16 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:07:25 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:07:25 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:07:25 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 416
+2018-04-16 18:37:46 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:37:46 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:39:49 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:39:49 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:41:27 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:41:27 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:51:48 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 219
+2018-04-16 18:51:48 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 219
+2018-04-16 18:51:48 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 219
+2018-04-16 18:51:48 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 219
+2018-04-16 18:51:48 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:51:48 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:51:48 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:51:48 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+2018-04-16 18:52:52 - PHP Notice:  Undefined index: payment_method in /home/tingtorn/public_html/click1cake/catalog/controller/extension/payment/cod.php on line 10
+2018-04-16 18:54:39 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 219
+2018-04-16 18:54:39 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 219
