@@ -1,21 +1,33 @@
-    $(document).ready(function() {
+$(document).ready(function() {
 
-      var button = $("#button_change");
-   
-      $(button).click(function() {
+  var button = $("#button_change");
 
+  $(button).click(function() {
 
-        var inputValue = $("#input_color").val();
+	var inputValue = $(".input_greeting").val();
 
-        var element = $(".greeting");
+	var element = $(".greeting");
 
-        $(element).html(inputValue);
+	$(element).html(inputValue);
 
-      });
+  });
 
-      
+});
 
-    });
+function showImagePreview(input){
+
+ if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        $('#filePreview').attr('src',e.target.result);
+        $('#filePreview').show();
+		$('#filePreview').addClass('photocakeimg');
+    }
+    reader.readAsDataURL(input.files[0]);
+	
+	
+ }
+}
 
 function magnify(imgID, zoom) {
   var img, glass, w, h, bw;

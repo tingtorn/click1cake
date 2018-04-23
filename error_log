@@ -226,3 +226,4 @@ Stack trace:
 #4 /home/tingtorn/public_html/click1cake/catalog/controller/extension/payment/cod.php(13): Proxy->__call('addOrderHistory', Array)
 #5 /home/tingtorn/public_html/click1cake/system/storageeekf45xd4lfq/modification/system/engine/action.php(79): ControllerExtensionPaymentCod->confirm()
 #6 /home/tingtorn/public_html/click1cake/catalog/contr in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 412
+[22-Apr-2018 07:25:50 UTC] PHP Parse error:  syntax error, unexpected ')', expecting variable (T_VARIABLE) in /home/tingtorn/public_html/click1cake/catalog/controller/tool/upload.php on line 78

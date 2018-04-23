@@ -863,3 +863,10 @@ h2.price {
   height: 80px;
   margin-left:250px;
 }
+.photocakeimg{
+	width:200px;
+	height:200px;
+	position:absolute;
+	top:100px;
+	left:290px;
+}

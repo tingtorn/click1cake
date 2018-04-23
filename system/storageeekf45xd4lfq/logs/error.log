@@ -25,3 +25,12 @@
 2018-04-16 18:52:52 - PHP Notice:  Undefined index: payment_method in /home/tingtorn/public_html/click1cake/catalog/controller/extension/payment/cod.php on line 10
 2018-04-16 18:54:39 - PHP Notice:  Undefined variable: product in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 219
 2018-04-16 18:54:39 - PHP Notice:  Undefined index: image in /home/tingtorn/public_html/click1cake/catalog/controller/mail/order.php on line 219
+2018-04-22 4:59:10 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/library/template/Twig/Environment.php(403) : eval()'d code on line 797
+2018-04-22 5:00:36 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/library/template/Twig/Environment.php(403) : eval()'d code on line 797
+2018-04-22 5:00:41 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/storageeekf45xd4lfq/cache/2a/2a8116c9f00a08ec423354e358aac0d494d50f4159db4ab078693cd84715843e.php on line 797
+2018-04-22 5:05:55 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/library/template/Twig/Environment.php(403) : eval()'d code on line 798
+2018-04-22 5:05:57 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/storageeekf45xd4lfq/cache/99/9930ea9f6eb8c9f2b9a32cae46c3e6a086e8b698b245a960ddab2a9686038962.php on line 798
+2018-04-22 5:06:03 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/library/template/Twig/Environment.php(403) : eval()'d code on line 798
+2018-04-22 5:06:05 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/storageeekf45xd4lfq/cache/5c/5c31b5ca7480d965e4f5fdebbb49f20d5927cf4e42217a7cbc9d371bb744eccd.php on line 798
+2018-04-22 5:06:06 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/storageeekf45xd4lfq/cache/5c/5c31b5ca7480d965e4f5fdebbb49f20d5927cf4e42217a7cbc9d371bb744eccd.php on line 798
+2018-04-22 5:06:08 - PHP Notice:  Array to string conversion in /home/tingtorn/public_html/click1cake/system/storageeekf45xd4lfq/cache/5c/5c31b5ca7480d965e4f5fdebbb49f20d5927cf4e42217a7cbc9d371bb744eccd.php on line 798

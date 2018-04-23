@@ -1,6 +1,6 @@
 <?php
 
-/* __string_template__f4fd188e77096448d64f4c158df300d929b2304a8e56d2547ba1018fa9c9ca2b */
+/* __string_template__f450e0c28b7dcdb1ea479c3230ff8372085a0e8b3a078217f97314842f71b6b7 */
 class __TwigTemplate_1c82e515e644dbfa0fe3bab83cd86cb36f6a015fd9cb80788064dde2a551cd85 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -121,7 +121,7 @@ Please donate via PayPal to donate@opencart.com
 
     public function getTemplateName()
     {
-        return "__string_template__f4fd188e77096448d64f4c158df300d929b2304a8e56d2547ba1018fa9c9ca2b";
+        return "__string_template__f450e0c28b7dcdb1ea479c3230ff8372085a0e8b3a078217f97314842f71b6b7";
     }
 
     public function isTraitable()
